@@ -1,0 +1,31 @@
+
+public class Circle 
+{
+	
+	String m_color = null;
+	double m_radius = 0;
+	
+	Circle(double radius)
+	{
+		m_color = "grey";
+		m_radius = radius;
+	}
+		
+	Circle(String color, double radius)
+	{
+		m_color = color;
+		m_radius = radius;
+	}
+	
+	double CalculateArea()
+	{
+		double area = 3.14 * m_radius * m_radius;
+		return area;
+	}
+	
+	void PrintColor()
+	{
+		System.out.println("This circle color is " + m_color + ".");
+	}
+	
+}
