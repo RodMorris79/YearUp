@@ -1,43 +1,31 @@
 
-public class Circle {
+public class Circle 
+{
+	
+	String m_color = null;
+	double m_radius = 0;
+	
+	Circle(double radius)
 	{
-	String m_color;
-	double m_radius =2.0;
+		m_color = "grey";
+		m_radius = radius;
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		{
-		public Circle (double m_radius, string m_color;
-		m_radius= new m_radius1;
-		m_color="grey";
 		
-		System.out.println ("the radius is " + m_radius_1, "The color is" + m_color);
-		
-		public Circle (double m_radius, string m_color;
-
-		m_radius = new m_radius2;
-		m_color	= new m_color1;
-		}
-		static double CalculateArea(double radius)
-		{
-			double area =3.14*radius*radius;
-			return area;
-			
-			{
-				public static void (String [] args):
-					System.out.println ("my color is" + m_color)
-				
-			}
-			
-			
-		}
-		
-		
-		
-		
-		
-		
-		
+	Circle(String color, double radius)
+	{
+		m_color = color;
+		m_radius = radius;
+	}
+	
+	double CalculateArea()
+	{
+		double area = 3.14 * m_radius * m_radius;
+		return area;
+	}
+	
+	void PrintColor()
+	{
+		System.out.println("This circle color is " + m_color + ".");
 	}
 	
 }
